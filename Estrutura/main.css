@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+}
+
 nav {
     align-content: center;
     align-items: center;
@@ -28,4 +32,13 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* efeito hover */
+}
+
+footer {
+    background-color: rgb(0, 0, 72);
+}
+
+#footertext {
+    color: white;
+    text-align: center;
 }
