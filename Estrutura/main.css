@@ -1,4 +1,4 @@
-body {
+h1, h2 {
     text-align: center;
 }
 
@@ -41,4 +41,47 @@ footer {
 #footertext {
     color: white;
     text-align: center;
+}
+
+.jogadores {
+    display: flex;
+    flex-wrap: wrap;      /* Quebra linha se faltar espaço */
+    justify-content: center;
+    gap: 20px;            /* Espaço entre os cards */
+    margin: 30px 0;
+}
+
+.jogador {
+    background-color: #ffffff;
+    border: 2px solid #ff7200;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jogador img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;    /* Ajusta imagem sem distorcer */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.jogador h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.jogador p {
+    font-size: 14px;
+    color: #555;
+}
+
+.jogador:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
 }
