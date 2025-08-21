@@ -1,38 +1,94 @@
-h1, h2 {
+body {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1, h2, h3, h4 {
     text-align: center;
+    align-items: center;    
 }
 
-nav {
-    align-content: center;
-    align-items: center;
+table {
     text-align: center;
-    background-color: rgb(255, 114, 43);
+    border-collapse: collapse;
+    margin: 0 auto; /* centraliza horizontalmente */
+    text-align: center; /* centraliza o conteúdo da célula */
 }
 
+tr, td {
+      border: 1px solid black;
+      padding: 10px;
+}
+/* Remove espaços padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header principal */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a2a43; /* azul escuro (igual ao do banner) */
+  color: white;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Banner */
+header .banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .banner img {
+  max-height: 100px; /* ajusta a altura do logo */
+  margin: 10px;
+}
+
+/* Texto do meio */
+header .banner h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Menu de navegação */
 nav {
-    display: flex;
-    justify-content: center;  /* Centraliza os itens na horizontal */
-    align-items: center;       /* Centraliza os itens na vertical */
-    gap: 20px;                 /* Espaçamento entre os links */
-    
-    background-color: rgb(255, 114, 0);
-    padding: 10px 20px;        /* Espaçamento interno */
-    border-radius: 8px;        /* Cantos arredondados */
+  background-color: #ff6600; /* laranja */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-/* Estilizando os links dentro do nav */
-nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 15px 0;
 }
 
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* efeito hover */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
 }
+
+nav ul li a:hover {
+  color: #0a2a43; /* contraste no hover */
+}
+
 
 footer {
     background-color: rgb(0, 0, 72);
